@@ -1,0 +1,13 @@
+<li>
+    <a href="#">
+      <img src="../../../assets/Images/ProfileDummy/Profile5.jpg">
+      <span>{{ node.name }}</span>
+    </a>
+    <ul>
+      <app-hierachy-node
+        *ngFor="let child of node.children"
+        [node]="child"
+      ></app-hierachy-node>
+    </ul>
+  </li>
+  

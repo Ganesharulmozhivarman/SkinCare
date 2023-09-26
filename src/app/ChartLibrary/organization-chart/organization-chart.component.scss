@@ -1,0 +1,36 @@
+img {
+    border: green 2px solid;
+    border-radius: 50%;
+}
+
+.Parent-container {
+    border: green 2px solid;
+    border-radius: 13px;
+    width: 200px;
+    background: antiquewhite    ;
+}
+.Parent-container1 {
+    border: orange 2px solid;
+    border-radius: 13px;
+    width: 200px;
+}
+
+.Parent-pic{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.vertical{
+    border-top-color: red;
+    height: auto;
+    color: red;
+ 
+}
+
+.line-3{
+    width: 20px;
+    height: 2px;
+    margin-left: -30px;
+    background-color: aqua;
+
+}

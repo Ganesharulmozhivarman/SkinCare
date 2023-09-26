@@ -1,0 +1,104 @@
+<!-- <ngx-org-chart [nodes]="nodes" direction="vertical" (itemClick)="test($event)"></ngx-org-chart> -->
+
+<div fxLayout="row" fxLayoutGap="20" style="margin: 20px;">
+    <div class="Parent-Node" fxLayout="column" fxLayoutAlign="center start"
+        style="height: auto;width: fit-content;background: antiquewhite;padding: 10px;">
+        <div class="Parent-container1" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10">
+
+            <div class="Parent-pic">
+                <img src="../../../assets/Images/ProfileDummy/Profile5.jpg" width="50px" height="50px">
+            </div>
+            <div class="Parent-Desc" fxLayout="column" fxLayoutAlign="start start">
+                <div class="Parent-Name"> Jayendran</div>
+                <div class="Parent-Name"> Vice President</div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+    </div>
+    <div style="width: 2px;background: aqua;height:280px;" fxFlexAlign="center"></div>
+
+
+    <div class="Parent-Node" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="20"
+        style="height: auto;width: fit-content;background: #ccc;padding: 10px;">
+        <div  *ngFor="let employee of data" fxLayout="row" fxLayoutGap="10px">
+            
+            <div class="Parent-container" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20">
+                <mat-divider class="horizontal"></mat-divider>
+                <div class="line-3"></div>
+                <div class="Parent-pic">
+                    <img [src]="employee.PicUrl" width="50px" height="50px">
+                </div>
+                <div class="Parent-Desc" fxLayout="column" fxLayoutAlign="start start">
+                    <div class="Parent-Name"> {{employee.Name}} </div>
+                    <div class="Parent-Name"> {{employee.Desc}}</div>
+                </div>
+                <div></div>
+            </div>
+            <div fxLayout="column" fxLayoutGap="10px">
+                <div class="Parent-container" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20">
+                    <!-- <mat-divider class="horizontal"></mat-divider> -->
+                    <!-- <div class="line-3"></div> -->
+                    <div class="Parent-pic">
+                        <img [src]="employee.PicUrl" width="50px" height="50px">
+                    </div>
+                    <div class="Parent-Desc" fxLayout="column" fxLayoutAlign="start start">
+                        <div class="Parent-Name"> {{employee.Name}} </div>
+                        <div class="Parent-Name"> {{employee.Desc}}</div>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="Parent-container" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20">
+                    <!-- <mat-divider class="horizontal"></mat-divider> -->
+                    <!-- <div class="line-3"></div> -->
+                    <div class="Parent-pic">
+                        <img [src]="employee.PicUrl" width="50px" height="50px">
+                    </div>
+                    <div class="Parent-Desc" fxLayout="column" fxLayoutAlign="start start">
+                        <div class="Parent-Name"> {{employee.Name}} </div>
+                        <div class="Parent-Name"> {{employee.Desc}}</div>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="Parent-container" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20">
+                    <!-- <mat-divider class="horizontal"></mat-divider> -->
+                    <!-- <div class="line-3"></div> -->
+                    <div class="Parent-pic">
+                        <img [src]="employee.PicUrl" width="50px" height="50px">
+                    </div>
+                    <div class="Parent-Desc" fxLayout="column" fxLayoutAlign="start start">
+                        <div class="Parent-Name"> {{employee.Name}} </div>
+                        <div class="Parent-Name"> {{employee.Desc}}</div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="Parent-Node" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="20"
+        style="height: 100vh;width: fit-content;background: #ccc;padding: 10px;">
+        <div class="Parent-container" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20"
+            *ngFor="let employee of data1">
+            <mat-divider class="horizontal"></mat-divider>
+            <div class="Parent-pic">
+                <img [src]="employee.PicUrl" width="50px" height="50px">
+            </div>
+            <div class="Parent-Desc" fxLayout="column" fxLayoutAlign="start start">
+                <div class="Parent-Name"> {{employee.Name}} </div>
+                <div class="Parent-Name"> {{employee.Desc}}</div>
+            </div>
+
+        </div>
+
+    </div> -->
+
+</div>
+
+
+<!-- <google-chart [data]="orgChart"></google-chart> -->
+
+<!-- <ngx-org-chart [data]="data" [layout]="'horizontal'"></ngx-org-chart> -->

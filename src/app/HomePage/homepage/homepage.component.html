@@ -1,0 +1,80 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-between" class="ToolBar">
+    <span>Skin Care Clinic</span>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+</mat-toolbar>
+
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="Login">ReadMe</button>
+    <button mat-menu-item routerLink="/Login">Log In</button>
+</mat-menu>
+<div class="Main-outlet" fxLayout="column">
+
+    <!-- First Section Starts Here -->
+    <div class="first-Section" fxLayout="column" fxLayoutAlign="center" fxLayoutAlign.lt-sm="end start">
+        <div class="Content-section" ngClass.lt-sm="Content-Section-mobile">
+            <h1 class="Heading">We Care For Your Skin</h1>
+            <p class="sub-Heading">We believe that everyone deserves to have beautiful, healthy skin. That's why we
+                offer our services at affordable prices. We also offer financing options to make it even easier for you
+                to get the skin care you deserve.</p>
+            <button mat-raised-button class="btn-consultation"> Free Consultation </button>
+        </div>
+    </div>
+    <!-- First Section Ends Here -->
+
+    <!-- Second Section Starts Here  -->
+    <div class="second-section-main">
+        <div class="our-Services-head">
+            <h1>Our Services</h1>
+        </div>
+        <div class="Second-Section" fxLayout="row wrap">
+            <div class="Division-Left" fxLayout="column" fxLayoutAlign="center center">
+                <h4 class="Hover-display">Botox</h4>
+            </div>
+            <div class="Division-Center" fxLayout="column" fxLayoutAlign="center center">
+                <h4 class="Hover-display">Wart Removal</h4>
+
+            </div>
+            <div class="Division-Right" fxLayout="column" fxLayoutAlign="center center">
+                <h4 class="Hover-display">Laser Hair Removal</h4>
+
+            </div>
+
+            <div class="Division-Left1" fxLayout="column" fxLayoutAlign="center center">
+                <h4 class="Hover-display">Botox</h4>
+            </div>
+            <div class="Division-Center1" fxLayout="column" fxLayoutAlign="center center">
+                <h4 class="Hover-display">Wart Removal</h4>
+
+            </div>
+            <div class="Division-Right1" fxLayout="column" fxLayoutAlign="center center">
+                <h4 class="Hover-display">Laser Hair Removal</h4>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Second Section Ends Here -->
+
+    <!-- Third Section Starts Here  -->
+    <div class="third-Section" fxLayout="row wrap" fxLayoutAlign="center center" fxLayout.lt-sm="column">
+        <div class="third-left">
+            <h1>
+                Interested in consulting with SkinLab Clinic? We have great deals for you.
+                Chat with our expert or
+                call 9833133130
+            </h1>
+        </div>
+        <div class="third-right" fxLayout="row wrap" fxLayoutAlign="center center" fxLayout.lt-sm="column"
+            fxLayoutGap="20">
+            <button mat-raised-button class=btn-consultation>
+                What's App Us
+            </button>
+            <button mat-raised-button class="btn-consultation">
+                Free Consultation
+            </button>
+        </div>
+
+    </div>
+    <!-- Third Section Ends Here  -->
+</div>

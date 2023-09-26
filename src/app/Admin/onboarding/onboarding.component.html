@@ -1,0 +1,29 @@
+<app-admin-menu></app-admin-menu>
+
+<div>
+  <!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+    {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+  </button> -->
+  <mat-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup" label="Personal Details">
+
+      <app-technician></app-technician>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Credentials Details">
+
+      <app-experience></app-experience>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <app-display-details> </app-display-details>
+      <div>
+        <button mat-button color="primary" matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+        <button mat-button (click)="updateCredienials()">Enroll</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+  
+</div>
+

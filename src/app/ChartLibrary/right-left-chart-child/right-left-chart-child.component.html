@@ -1,0 +1,11 @@
+<ng-container >
+    <ul>
+      <li *ngFor="let grandChild of hierarchyData" [ngClass]="grandChild.children.length > 0?'green':'yellow'">
+        <a href="#">
+          <img height="50px" width="50px" src="../../../assets/Images/ProfileDummy/Profile5.jpg">
+          <span>{{ grandChild.name }}</span>
+        </a>
+        <app-right-left-chart-child *ngIf="grandChild.children" [hierarchyData]="grandChild.children" ></app-right-left-chart-child>
+      </li>
+    </ul>
+  </ng-container>

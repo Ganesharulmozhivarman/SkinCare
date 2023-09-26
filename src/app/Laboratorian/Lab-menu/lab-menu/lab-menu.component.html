@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <div style="width: 50%;" > Lab Panel</div>
+    <div class="menu-iems" fxHide.lt-md="true" fxLayout="row wrap">
+        <button mat-button (click)="navigate(1)" >Home</button>
+        <button mat-button (click)="navigate(2)">Lab Test</button>
+        <button mat-button (click)="navigate(3)">Upload </button>
+        <button mat-button (click)="navigate(4)">Entry</button>
+        <button mat-button  (click)="navigate(5)">Logout</button>
+
+        <!-- <button mat-raised-button>Check</button> -->
+    </div>
+    <div class="menu-iems"  fxHide.md="true" fxHide.gt-md="true" fxLayout="row wrap">
+
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    </div>
+
+
+    <mat-menu #menu="matMenu">
+        <!-- <button mat-menu-item routerLink="Login">ReadMe</button> -->
+        <button mat-menu-item (click)="navigate(1)">Home</button>
+        <button mat-menu-item (click)="navigate(2)">Lab Test</button>
+        <button mat-menu-item (click)="navigate(3)">Upload</button>
+        <button mat-menu-item (click)="navigate(3)">Entry</button>
+        <button mat-menu-item (click)="navigate(5)">Logout</button>
+        <!-- <button mat-menu-item routerLink="/Login">Log In</button> -->
+    </mat-menu>
+</mat-toolbar>

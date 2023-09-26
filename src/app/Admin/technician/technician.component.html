@@ -1,0 +1,47 @@
+<form [formGroup]="firstFormGroup" fxLayout="row wrap" fxLayoutGap="10">
+    <mat-form-field class="Form-size">
+        <mat-label>First name</mat-label>
+        <input matInput placeholder="First name" formControlName="firstName" required>
+      </mat-form-field>
+    <mat-form-field  class="Form-size">
+        <mat-label>Last name</mat-label>
+        <input matInput placeholder="Last name" formControlName="lastName" required>
+      </mat-form-field>
+    <mat-form-field  class="Form-size">
+        <mat-label>Age</mat-label>
+        <input matInput placeholder="Age" formControlName="Age" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>Profession</mat-label>
+        <input matInput placeholder="Profession" formControlName="Profession" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>Education</mat-label>
+        <input matInput placeholder="Education" formControlName="Education" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>GraduatedFrom</mat-label>
+        <input matInput placeholder="GraduatedFrom" formControlName="GraduatedFrom" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>ReferredBy</mat-label>
+        <input matInput placeholder="ReferredBy" formControlName="ReferredBy" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>Residing In</mat-label>
+        <input matInput placeholder="State" formControlName="State" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>Residing In</mat-label>
+        <input matInput placeholder="Country" formControlName="Country" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>Residing In</mat-label>
+        <input matInput placeholder="Address" formControlName="Address" required>
+      </mat-form-field>
+        
+  </form>
+  <div>
+    <button mat-button matStepperNext>Next</button>
+    <button mat-button (click)="Check()" >Console</button>
+</div>

@@ -1,0 +1,77 @@
+<app-doctor-menu></app-doctor-menu>
+
+<div class="Main-Layout"  fxLayout="row" fxLayout.lt-md="column" >
+  <div class="image-section"  fxLayout="column" fxLayoutAlign="center center" ngClass.lt-md="image-section2">
+    
+  </div>
+  <form [formGroup]="AppointmentForm" (ngSubmit)="onSubmit()" ngClass.lt-md="width-90" class="width-50">
+
+    <div class="form-class" fxFlex="fxFlex.lt-md?80:50" fxLayoutGap="10">
+      <div style="width: 100%;align-content: center;">
+        <h1 class="divider-child">Patients Demographics</h1>
+      </div>
+      <div fxFlex="fxFlex.lt-md?60:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Number</mat-label>
+          <input #input
+                 type="text"
+                 placeholder="Pick one"
+                 matInput
+                 formControlName="patient"
+                 [matAutocomplete]="auto"
+                 (input)="filter()"
+                 (focus)="filter()">
+          <mat-autocomplete requireSelection #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+    </div>
+      <!-- Date of Birth -->
+      <!-- <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Bill</mat-label>
+          <mat-select formControlName="timeslot">
+            <mat-option name="timeslot" ngDefaultControl *ngFor="let count of timeslots" [value]="count">
+              {{count}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div> -->
+      <div fxFlex="fxFlex.lt-md?60:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Bill </mat-label>
+          <input formControlName="Bill" matInput>
+        </mat-form-field>
+      </div>
+      <!-- Country  -->
+      <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>timeslot</mat-label>
+          <mat-select formControlName="timeslot">
+            <mat-option name="timeslot" ngDefaultControl *ngFor="let count of timeslots" [value]="count">
+              {{count}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <!-- State -->
+      <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Doctor</mat-label>
+          <mat-select formControlName="Doctor">
+            <mat-option name="Doctor" ngDefaultControl *ngFor="let count of Doctor" [value]="count">
+              {{count}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      
+      <div fxFlex="fxFlex.lt-md?50:30">
+
+        <button mat-raised-button color="warn" class="divider-child" style="margin-top: 10px;">Generate Bill</button>
+      </div>
+    </div>
+  </form>
+</div>

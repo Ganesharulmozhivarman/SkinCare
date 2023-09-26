@@ -1,0 +1,55 @@
+.Main-Layout{
+    background-image: url('../../../../assets/Images/Receptionist2.jpg');
+    background-size: cover;
+    // margin-top: -20px;
+    // background-color:crimson;
+    height:100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    .width-50{
+        width:50%;
+    }
+    .width-90{
+        width:90%;
+        align-content: center;
+    }
+    .form-class{
+        // background-color: aqua;
+        // width:50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 15px;
+        align-content: center;
+
+        // .divider{
+        //     display: flex;
+        //     flex-direction: row;
+        //     place-content: space-evenly;
+        //     flex-wrap: wrap;
+            .divider-child{
+                // width: 50%;
+                margin-left: 10px;
+                width: 200px;
+                white-space: nowrap;
+            }
+        // }
+    }
+    .image-section{
+        width:50%;
+        // background-color: aqua;
+        margin: 10px;
+        // height: 100vh;
+    }
+    .image-section2{
+        width:100%;
+        // background-color: aqua;
+        margin: 10px;
+    }
+   
+}
+
+.mat-elevation-z8{
+    width: 100%;
+}

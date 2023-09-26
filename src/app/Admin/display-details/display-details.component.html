@@ -1,0 +1,17 @@
+
+<mat-toolbar>Personal Details</mat-toolbar>
+<mat-card fxLayout="column" fxLayoutGap="10px">
+    <div *ngFor="let element of FirstFormChanges" fxLayout="row" class="padding-10" fxLayoutGap="10px">
+        <div class="width-50">{{element[0] | uppercase}}  </div>
+        <div class="width-50">{{element[1]}}</div>
+    </div>
+</mat-card>
+
+
+<mat-toolbar>Credentials Details</mat-toolbar>
+<mat-card fxLayout="column" fxLayoutGap="10px">
+    <div *ngFor="let element of SecondFormChanges" fxLayout="row" class="padding-10" fxLayoutGap="10px">
+        <div class="width-50">{{element[0] | uppercase}}  </div>
+        <div class="width-50">{{element[1]}}</div>
+    </div>
+</mat-card>

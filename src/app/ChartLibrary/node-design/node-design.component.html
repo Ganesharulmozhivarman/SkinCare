@@ -1,0 +1,33 @@
+<div >
+    <div class="node-head"
+        style="width: fit-content; height: 70px;background-color: antiquewhite;min-width: 200px;max-width: fit-content;margin: 10px;">
+        <div class="Parent-Node" fxLayout="column" fxLayoutAlign="center start"
+            style="height: auto;min-width: 200px;padding: 10px;">
+            <div class="Parent-container1" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10">
+
+                <div class="Parent-pic">
+                    <img src="../../../assets/Images/ProfileDummy/Profile5.jpg" width="50px" height="50px">
+                </div>
+                <div class="Parent-Desc" fxLayout="column" fxLayoutAlign="start start">
+                    <div class="Parent-Name"> {{name}}</div>
+                    <div class="Parent-Name"> {{Designation}}</div>
+                    <div class="Parent-Name"> {{Age}}</div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <h1 [class.has-children]="!!children?.length">
+            
+        </h1>
+
+    </div>
+
+    <div *ngIf="children" class="children">
+        <ng-container *ngFor="let node of children" >
+            <app-node-design fxLayout="column" [name]="node.name" [children]="node.children" [Designation]="node.designation">
+            </app-node-design>
+        </ng-container>
+    </div>
+</div>

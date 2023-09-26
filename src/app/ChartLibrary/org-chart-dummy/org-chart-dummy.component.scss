@@ -1,0 +1,25 @@
+:host ::ng-deep [data-n-id='1'] rect {
+  fill: #750000;
+}
+
+.org-chart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .employee {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  #lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+  

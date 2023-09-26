@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="tree">
+            <ul>
+                <li *ngFor="let node of hierarchyData">
+                    <a href="#">
+                        <img src="../../../assets/Images/ProfileDummy/Profile5.jpg">
+                        <span>{{ node.name }}</span>
+
+                    </a>
+                    <ul>
+                        <li *ngFor="let child of node.children">
+                            <a href="#">
+                                <img src="../../../assets/Images/ProfileDummy/Profile5.jpg">
+                                <span>{{ child.name }}</span>
+
+                            </a>
+
+                            <ng-container *ngIf="child.children && child.children.length > 0">
+                                <app-right-left-chart-child
+                                    [hierarchyData]="child.children"></app-right-left-chart-child>
+
+                            </ng-container>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

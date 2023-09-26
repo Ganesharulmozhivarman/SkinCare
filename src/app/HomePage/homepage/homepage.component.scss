@@ -1,0 +1,215 @@
+:host {
+    --pixel: 15px;
+}
+
+.ToolBar{
+    height: 45px;
+    padding-top: 5px;
+}
+.btn-consultation {
+    color: white !important;
+    background-color: midnightblue !important;
+}
+.Hover-display{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.Main-outlet {
+    color: black;
+    background-color: aqua;
+    height: auto;
+    overflow: hidden;
+
+    .first-Section {
+        height: 100vh;
+        background-image: url('../../../assets/Images/HomePage/HomePage2_cropped.jpg');
+        // background-size: cover;
+        background-size: cover;
+        background-position: right;
+        background-position-y: initial;
+
+        .Content-Section-mobile {
+            width: 100% !important;
+            margin-bottom: 30px;
+
+        }
+
+        .Content-section {
+            width: 50%;
+            margin-left: 10px;
+
+            .Heading {
+                font-size: 36px;
+                color: midnightblue;
+
+            }
+
+            .sub-Heading {
+                font-size: 15px;
+                line-height: calc(var(--pixel) + 5px);
+                color: #f0f0f0;
+            }
+        }
+    }
+
+    .second-section-main {
+        background-color: #f0b0c0;
+        color: black;
+        min-height: 80vh;
+        max-height: auto;
+
+        .our-Services-head {
+            place-content: center;
+            width: 100%;
+            display: flex;
+            margin-top: 25px;
+            color: midnightblue;
+
+            h1 {
+                font-size: 34px;
+                font-weight: bolder;
+            }
+        }
+
+        .Second-Section {
+            place-content: center;
+
+            .Division-Left {
+                color: black;
+                margin: 20px;
+                width: 330px;
+                // background-color: white;
+                background-image: url('../../../assets/Images/HomePage_Services/Services1.jpg');
+                background-size: cover;
+                border: midnightblue 4px solid;
+                border-radius: 20px;
+                height: 330px;
+                color: transparent;
+            }
+
+            .Division-Left:hover {
+                color: black;
+                scale: 1.05;
+                
+
+            }
+            
+            .Division-Center {
+                height: 330px;
+                background-image: url('../../../assets/Images/HomePage_Services/Services2.jpg');
+                background-size: cover;
+                color: black;
+                margin: 20px;
+                border: midnightblue 4px solid;
+                border-radius: 20px;
+                // width: 25%;
+                width: 330px;
+                color: transparent;
+                background-color: white;
+                // height: 60vh;
+            }
+            
+            .Division-Center:hover {
+                color: black;
+                scale: 1.05;
+            }
+            
+            .Division-Right {
+                color: black;
+                height: 330px;
+                background-image: url('../../../assets/Images/HomePage_Services/Services.jpg');
+                background-size: cover;
+                color: transparent;                
+                // width: 25%;
+                border: midnightblue 4px solid;
+                border-radius: 20px;
+                // height: 60vh;
+                width: 330px;
+                margin: 20px;
+                background-color: white;
+            }
+            
+            .Division-Right:hover {
+                color: black;
+                scale: 1.05;
+
+            }
+
+            .Division-Left1 {
+                color: black;
+                margin: 20px;
+                width: 330px;
+                // background-color: white;
+                background-image: url('../../../assets/Images/HomePage_Services/Services3.jpg');
+                background-size: cover;
+                border: midnightblue 4px solid;
+                border-radius: 20px;
+                height: 330px;
+                color: transparent;
+            }
+
+            .Division-Left1:hover {
+                color: black;
+                scale: 1.05;
+            }
+            
+            .Division-Center1 {
+                height: 330px;
+                background-image: url('../../../assets/Images/HomePage_Services/Services4.jpg');
+                background-size: cover;
+                color: black;
+                margin: 20px;
+                border: midnightblue 4px solid;
+                border-radius: 20px;
+                // width: 25%;
+                width: 330px;
+                color: transparent;
+                background-color: white;
+                // height: 60vh;
+            }
+            
+            .Division-Center1:hover {
+                color: black;                
+                scale: 1.05;
+            }
+            
+            .Division-Right1 {  
+                color: black;
+                height: 330px;
+                background-image: url('../../../assets/Images/HomePage_Services/Services5.jpg');
+                background-size: cover;
+                color: transparent;
+                // width: 25%;
+                border: midnightblue 4px solid;
+                border-radius: 20px;
+                // height: 60vh;
+                width: 330px;
+                margin: 20px;
+                background-color: white;
+            }
+            
+            .Division-Right1:hover {
+                color: black;
+                scale: 1.05;
+
+            }
+        }
+
+    }
+
+    .third-Section{
+        background: orange;
+        min-height: 30vh;
+        max-height: auto;
+
+        .third-left{
+            width:50%;
+            margin: 20px;
+        }
+        .third-right{
+            width:50%;
+        }
+    }
+
+}

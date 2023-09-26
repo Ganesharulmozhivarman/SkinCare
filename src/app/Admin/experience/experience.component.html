@@ -1,0 +1,35 @@
+<form [formGroup]="secondFormGroup" fxLayout="column wrap" fxLayoutGap="10">
+    <div fxLayout="row wrap" fxLayoutGap="10">
+      <mat-form-field class="Form-size">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" formControlName="Email" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" formControlName="Password" required>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row wrap" fxLayoutGap="10">
+      <mat-form-field class="Form-size">
+        <mat-label>Role</mat-label>
+        <input matInput placeholder="Role" formControlName="Role" required>
+      </mat-form-field>
+    <mat-form-field class="Form-size">
+        <mat-label>experience</mat-label>
+        <input matInput placeholder="experience in yrs" formControlName="experience" required>
+      </mat-form-field>
+    </div>
+    <!-- <mat-form-field>
+        <mat-label>Education</mat-label>
+        <input matInput placeholder="Education" formControlName="Education" required>
+      </mat-form-field>
+    <mat-form-field>
+        <mat-label>GraduatedFrom</mat-label>
+        <input matInput placeholder="GraduatedFrom" formControlName="GraduatedFrom" required>
+      </mat-form-field>
+  -->
+        <div>
+            <button mat-button matStepperNext>Next</button>
+            <button mat-button (click)="Check()" >Console</button>
+    </div>
+  </form>

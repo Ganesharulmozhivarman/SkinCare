@@ -1,0 +1,49 @@
+<!-- <div>
+    <h1
+      [class.has-children]="!!children?.length"
+    >
+      {{name}}
+    </h1>
+  
+    <div 
+      *ngIf="children"
+      class="children"
+    >
+      <ng-container *ngFor="let node of children">
+        <app-node
+          [name]="node.name"
+          [children]="node.children"
+        >
+        </app-node>
+      </ng-container>
+    </div>
+  </div> -->
+<!-- 
+  <div class="node" *ngFor="let node of hierarchyData">
+    {{ node.name }}
+    <div class="connecting-line" *ngIf="node.children.length > 0"></div>
+    <div class="children">
+      <app-node [hierarchyData]="node.children"></app-node>
+    </div>
+  </div>
+   -->
+   <!-- <div style="width: 5px;background: green;height: 100px;position: relative;top: 130%;
+  left: 18px;"></div> -->
+
+  
+<div class="tree">
+  <ul>
+    <li *ngFor="let node of hierarchyData">
+      <!-- <h1 class="line">hello</h1> -->
+      <a href="#">
+        <img height="50px" width="50px" src="../../../assets/Images/ProfileDummy/Profile5.jpg">
+        <span>{{ node.name }}</span>
+      </a>
+      <!-- <div class="node">
+        {{ node.name }}
+        <div class="connecting-line" *ngIf="node.children && node.children.length > 0"></div>
+      </div> -->
+      <app-node-child [hierarchyData]="node.children" *ngIf="node.children && node.children.length > 0"></app-node-child>
+    </li>
+  </ul>
+</div>

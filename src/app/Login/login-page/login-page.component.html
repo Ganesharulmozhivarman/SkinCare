@@ -1,0 +1,34 @@
+<section class="login">
+    <div class="Main-Layout" fxLayout="row">
+        <div class="image-section" fxHide.lt-md="true">
+    
+        </div>
+        <form [formGroup]="PatientsForm"  fxLayoutAlign="center center" (ngSubmit)="onSubmit()" ngClass.lt-md="width-90" class="width-50">
+    
+            <div class="form-class"  style="width: 90%;"    fxLayout="column" fxLayoutGap="10">
+                <div style="width: 100%;align-content: center;text-align: center;">
+                    <h1 class="divider-child">Welcome</h1>
+                </div>
+                <div  fxFlex="fxFlex.lt-md?60:30">
+                    <mat-form-field class="divider-child">
+                        <mat-label>Email</mat-label>
+                        <input type="email" formControlName="Email" matInput>
+                    </mat-form-field>
+                </div>
+                <!-- First Name  -->
+                <div fxFlex="fxFlex.lt-md?60:30">
+                    <mat-form-field class="divider-child">
+                        <mat-label>Password</mat-label>
+                        <input type="password" formControlName="Password" matInput>
+                    </mat-form-field>
+                </div>
+               
+                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10" fxFlex="fxFlex.lt-md?50:30">
+    
+                    <button mat-raised-button color="primary" style="width: 40%;"  >Login</button>
+                    <button mat-raised-button style="width: 40%;"> Readme </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

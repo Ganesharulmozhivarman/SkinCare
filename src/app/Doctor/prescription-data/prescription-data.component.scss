@@ -1,0 +1,60 @@
+.Main-Layout {
+    // background-image: url('../../../assets/Images/Receptionist.jpg');
+    background-size: cover;
+    background-image: url('../../../assets/Images/Prescription.jpg');
+    // margin-top: -20px;
+    // background-color: #e8e8e7;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .width-50 {
+        width: 50%;
+        background-color: #e8e8e7;
+        opacity: 0.95;
+        overflow: auto;
+    }
+    
+    .width-90 {
+        opacity: 0.95;
+        width: 100%;
+        background-color: #e8e8e7;
+        overflow: auto;
+        align-content: center;
+    }
+
+    .form-class {
+        // background-color: aqua;
+        // width:50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 15px;
+        align-content: center;
+
+        // .divider{
+        //     display: flex;
+        //     flex-direction: row;
+        //     place-content: space-evenly;
+        //     flex-wrap: wrap;
+        .divider-child {
+            // width: 50%;
+            margin-left: 10px;
+            width: 200px;
+            white-space: nowrap;
+        }
+
+        // }
+    }
+
+    .image-section {
+        width: 50%;
+        background-size: cover;
+
+        // background-color: aqua;
+        margin: 10px;
+        margin-bottom: 10px;
+    }
+
+}

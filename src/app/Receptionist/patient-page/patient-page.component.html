@@ -1,0 +1,100 @@
+<app-rec-home></app-rec-home>
+
+<div class="Main-Layout" fxLayout="row">
+  <div class="image-section" fxHide.lt-md="true">
+
+  </div>
+  <form [formGroup]="PatientsForm" (ngSubmit)="onSubmit()" ngClass.lt-md="width-90" class="width-50">
+
+    <div class="form-class" fxFlex="fxFlex.lt-md?80:50" fxLayoutGap="10">
+      <div style="width: 100%;align-content: center;">
+        <h1 class="divider-child">Patients Demographics</h1>
+      </div>
+      <!-- <div fxFlex="fxFlex.lt-md?60:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Number</mat-label>
+          <input #input
+                 type="text"
+                 placeholder="Pick one"
+                 matInput
+                 [formControl]="myControl"
+                 [matAutocomplete]="auto"
+                 (input)="filter()"
+                 (focus)="filter()">
+          <mat-autocomplete requireSelection #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+    </div> -->
+      <!-- First Name  -->
+      <div fxFlex="fxFlex.lt-md?60:30">
+        <mat-form-field class="divider-child">
+          <mat-label>First Name</mat-label>
+          <input formControlName="firstName" matInput>
+        </mat-form-field>
+      </div>
+      <!-- Last Name -->
+      <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Last Name</mat-label>
+          <input formControlName="lastName" matInput>
+        </mat-form-field>
+      </div>
+      <!-- Date of Birth -->
+      <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Date of Birth</mat-label>
+          <input formControlName="dob" matInput [matDatepicker]="picker">
+          <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+      </div>
+      <!-- Country  -->
+      <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Country</mat-label>
+          <mat-select formControlName="country">
+            <mat-option name="country" ngDefaultControl *ngFor="let count of Country" [value]="count">
+              {{count}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <!-- State -->
+      <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>State</mat-label>
+          <mat-select formControlName="state">
+            <mat-option name="state" ngDefaultControl *ngFor="let count of State" [value]="count">
+              {{count}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Address</mat-label>
+          <textarea matInput formControlName="address"></textarea>
+        </mat-form-field>
+      </div>
+      <div fxFlex="fxFlex.lt-md?50:30">
+        <mat-form-field class="divider-child">
+          <mat-label>Referred By</mat-label>
+          <mat-select formControlName="referred">
+            <mat-option name="referred" ngDefaultControl *ngFor="let count of Referral" [value]="count">
+              {{count}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxFlex="fxFlex.lt-md?50:30">
+
+        <button mat-raised-button color="warn" class="divider-child" style="margin-top: 10px;" (click)="PostData()">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

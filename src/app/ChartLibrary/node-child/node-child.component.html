@@ -1,0 +1,11 @@
+<!-- <h1 class="line">hello</h1> -->
+<ul>
+  <li *ngFor="let node of hierarchyData" [ngClass]="node.children?'green':'yellow'">
+    <!-- <h1 class="line">hello</h1> -->
+    <a href="#">
+      <img height="50px" width="50px" src="../../../assets/Images/ProfileDummy/Profile5.jpg">
+      <span>{{ node.name }}</span>
+    </a>
+    <app-node-child [hierarchyData]="node.children" *ngIf="node.children && node.children.length > 0"></app-node-child>
+  </li>
+</ul>

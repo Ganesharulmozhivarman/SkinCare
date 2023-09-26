@@ -1,0 +1,172 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "Email": "ganesh@reception.com",
+      "Password": "reception@12345",
+      "Role": "Reception"
+    },
+    {
+      "id": 1,
+      "Email": "ganesh@doctor.com",
+      "Password": "doctor@12345",
+      "Role": "Doctor"
+    },
+    {
+      "id": 1,
+      "Email": "ganesh@Laboratrian.com",
+      "Password": "Laboratrian@12345",
+      "Role": "Laboratrian"
+    },
+    {
+      "id": 1,
+      "Email": "ganesh@Admin.com",
+      "Password": "Admin@12345",
+      "Role": "Admin"
+    }
+  ],
+  "Credientials": [
+    {
+      "id": 1,
+      "Email": "ganesh@doctor.com",
+      "Password": "doctor@12345",
+      "Role": "Doctor",
+      "experience": "11"
+    },
+    {
+      "Email": "ganesh@reception.com",
+      "Password": "reception@12345",
+      "Role": "Recep",
+      "experience": "1",
+      "id": 2
+    },
+    {
+      "Email": "rajesh@reception.com",
+      "Password": "reception@12345",
+      "Role": "Reception",
+      "experience": "7",
+      "id": 3
+    }
+  ],
+  "Personal": [
+    {
+      "id": 1,
+      "firstName": "Ganesh",
+      "lastName": "A",
+      "Age": "25",
+      "Profession": "SOFTWARE",
+      "Education": "BE ME ",
+      "GraduatedFrom": "AMET",
+      "ReferredBy": "-",
+      "State": "TN",
+      "Country": "IN",
+      "Address": "IN"
+    },
+    {
+      "firstName": "Rajesh",
+      "lastName": "A",
+      "Age": "31",
+      "Profession": "RECEP",
+      "Education": "BE",
+      "GraduatedFrom": "MGR",
+      "ReferredBy": "-",
+      "State": "TN",
+      "Country": "IN",
+      "Address": "IN",
+      "id": 2
+    }
+  ],
+  "Patients": [
+    {
+      "firstName": "Ganesh",
+      "lastName": "A",
+      "dob": "2023-09-18T18:30:00.000Z",
+      "country": "India",
+      "state": "Tamilnadu",
+      "address": "A",
+      "referred": "Dr RajiniKanth",
+      "id": 3
+    },
+    {
+      "firstName": "Rajesh",
+      "lastName": "A",
+      "dob": "2023-05-03T18:30:00.000Z",
+      "country": "India",
+      "state": "Tamilnadu",
+      "address": "IN",
+      "referred": "Dr RajiniKanth",
+      "id": 4
+    }
+  ],
+  "Appointments": [
+    {
+      "doa": "2023-09-21T18:30:00.000Z",
+      "timeslot": "10-11AM",
+      "Doctor": "Dr Ganesh",
+      "patient": "Rajesh",
+      "id": 8
+    },
+    {
+      "Bill": "12",
+      "timeslot": "9-10AM",
+      "Doctor": "Dr Ganesh",
+      "patient": null,
+      "id": 9
+    },
+    {
+      "doa": "",
+      "timeslot": "",
+      "Doctor": "",
+      "patient": "",
+      "id": 10
+    },
+    {
+      "doa": "2023-09-25T18:30:00.000Z",
+      "timeslot": "9-10AM",
+      "Doctor": "Dr Ganesh",
+      "patient": "Ganesh",
+      "id": 11
+    }
+  ],
+  "Prescriptions": [
+    {
+      "doa": "2023-09-21T18:30:00.000Z",
+      "timeslot": "10-11AM",
+      "Doctor": "Dr Ganesh",
+      "patient": "Rajesh",
+      "id": 8
+    }
+  ],
+  "labTest": [
+    {
+      "firstName": "ECHO",
+      "lastName": "10000",
+      "dob": "2023-09-23T18:30:00.000Z",
+      "country": "Radiology",
+      "state": "Scan",
+      "address": "Heart Related",
+      "referred": "Dr RajiniKanth",
+      "id": 10
+    }
+  ],
+  "TestReports": [
+    {
+      "patient": "Ganesh",
+      "labtest": "ECHO",
+      "price": "12000",
+      "dob": "2023-09-23T18:30:00.000Z",
+      "Description": "Done",
+      "referred": "Dr RajiniKanth",
+      "id": 1
+    },
+    {
+      "patient": "Rajesh",
+      "labtest": "ECHO",
+      "price": "14000",
+      "dob": "2023-09-23T18:30:00.000Z",
+      "Description": "Done",
+      "referred": "Dr RajiniKanth",
+      "id": 2
+    }
+  ]
+}
